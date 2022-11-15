@@ -9,13 +9,14 @@ public class Atleta {
     private String email;
     private int numeroInscricao;
 
+
     public Atleta(String nome, String dataNascimento, Sexo sexo, String cpf, String email) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.sexo = sexo;
         this.cpf = cpf;
         this.email = email;
-        //this.numeroInscricao = numeroInscricao;
+
     }
 
 
@@ -69,8 +70,7 @@ public class Atleta {
 
     @Override
     public String toString() {
-        return "Atleta: " +
-                "nome= " + nome +
+        return "atleta: " + nome +
                 ", dataNascimento= " + dataNascimento +
                 ", sexo= " + sexo +
                 ", cpf= " + cpf +

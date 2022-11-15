@@ -1,6 +1,6 @@
 package br.com.ada.cadastrodeatleta;
 
-public enum CategoriaDoAtleta {
+public enum CategoriaDoAtletaMountainBike {
     SPORT_FEMININO,
     SPORT_MASCULINO,
     PRO_FEMININO,

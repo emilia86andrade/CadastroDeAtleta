@@ -11,20 +11,14 @@ public class AtletasInscritos {
 
 
         AtletaDeMountainBike atletaDeMountainBike1 = new AtletaDeMountainBike("Emilia", "31/01/1986",
-                Sexo.FEMININO, "123.456.789.11", "emilia86andrade@gmail.com", CategoriaDoAtleta.ELITE_FEMININO);
+                Sexo.FEMININO, "123.456.789.11", "emilia86andrade@gmail.com", CategoriaDoAtletaMountainBike.ELITE_FEMININO);
 
         AtletaDeMountainBike atletaDeMountainBike2 = new AtletaDeMountainBike("Jack", "15/08/1957",
-                Sexo.FEMININO, "789.456.123-32", "jack@gmail.com", CategoriaDoAtleta.ELITE_FEMININO);
+                Sexo.FEMININO, "789.456.123-32", "jack@gmail.com", CategoriaDoAtletaMountainBike.ELITE_FEMININO);
 
         AtletaDeMountainBike atletaDeMountainBike3 = new AtletaDeMountainBike("Flor", "01/09/1961",
-                Sexo.FEMININO, "987.654.369-58", "flor@gmail.com", CategoriaDoAtleta.ELITE_FEMININO);
+                Sexo.FEMININO, "987.654.369-58", "flor@gmail.com", CategoriaDoAtletaMountainBike.ELITE_FEMININO);
 
-
-
-
-
-//        System.out.println(atleta);
-//        System.out.println(atletaDeMountainBike);
 
         AtletaRepository atletaRepository = new AtletaRepository();
         atletaRepository.cadastra(atletaDeMountainBike1);
@@ -33,6 +27,15 @@ public class AtletasInscritos {
         atletaRepository.cadastra(atleta1);
         atletaRepository.cadastra(atleta2);
         atletaRepository.imprimeAtleta();
+
+
+        System.out.println("\n-------Meios de Pagamento-------");
+        System.out.println(atletaDeMountainBike1.pagarInscricaoPix(atletaDeMountainBike1));
+        System.out.println(atletaDeMountainBike2.pagarInscricaoCartao(atletaDeMountainBike2));
+        System.out.println(atletaDeMountainBike3.bolsaAtleta(atletaDeMountainBike3));
+
+
+
 
 
 

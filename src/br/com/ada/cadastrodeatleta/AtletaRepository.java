@@ -29,7 +29,7 @@ public class AtletaRepository {
     }
 
     public void imprimeAtleta(){
-        System.out.println("_____________ATLETAS CADASTRADOS_____________");
+        System.out.println("\n_____________LISTA DE TODOS OS ATLETAS CADASTRADOS_____________");
         boolean existeAtletaCadastrado = false;
         for (Atleta atleta: atletaCadastrado){
             if (Objects.nonNull(atleta)){
