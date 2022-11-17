@@ -1,6 +1,7 @@
 package br.com.ada.cadastrodeatleta;
 
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class AtletaRepository {
@@ -9,6 +10,7 @@ public class AtletaRepository {
 
     //numero máximo de atletas inscritos por prova
     private Atleta[] atletaCadastrado = new Atleta[100];
+
 
     private static int numeroInscricao = 1;
 

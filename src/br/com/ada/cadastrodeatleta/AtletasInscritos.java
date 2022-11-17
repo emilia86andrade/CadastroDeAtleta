@@ -1,5 +1,7 @@
 package br.com.ada.cadastrodeatleta;
 
+import java.util.List;
+
 public class AtletasInscritos {
 
     public static void main(String[] args) {
@@ -20,22 +22,26 @@ public class AtletasInscritos {
                 Sexo.FEMININO, "987.654.369-58", "flor@gmail.com", CategoriaDoAtletaMountainBike.ELITE_FEMININO);
 
 
-        AtletaRepository atletaRepository = new AtletaRepository();
-        atletaRepository.cadastra(atletaDeMountainBike1);
-        atletaRepository.cadastra(atletaDeMountainBike2);
-        atletaRepository.cadastra(atletaDeMountainBike3);
-        atletaRepository.cadastra(atleta1);
-        atletaRepository.cadastra(atleta2);
-        atletaRepository.imprimeAtleta();
+ //       AtletaRepository atletaRepository = new AtletaRepository();
+//        atletaRepository.cadastra(atletaDeMountainBike1);
+//        atletaRepository.cadastra(atletaDeMountainBike2);
+//        atletaRepository.cadastra(atletaDeMountainBike3);
+//        atletaRepository.cadastra(atleta1);
+//        atletaRepository.cadastra(atleta2);
+//        atletaRepository.imprimeAtleta();
 
 
-        System.out.println("\n-------Meios de Pagamento-------");
-        System.out.println(atletaDeMountainBike1.pagarInscricaoPix(atletaDeMountainBike1));
-        System.out.println(atletaDeMountainBike2.pagarInscricaoCartao(atletaDeMountainBike2));
-        System.out.println(atletaDeMountainBike3.bolsaAtleta(atletaDeMountainBike3));
+//        System.out.println("\n-------Meios de Pagamento-------");
+//        System.out.println(atletaDeMountainBike1.pagarInscricaoPix(atletaDeMountainBike1));
+//        System.out.println(atletaDeMountainBike2.pagarInscricaoCartao(atletaDeMountainBike2));
+//        System.out.println(atletaDeMountainBike3.bolsaAtleta(atletaDeMountainBike3));
 
 
+        Relatorios<Atleta> relatoriosAtletas = new Relatorios();
+        //relatoriosAtletas.gerarRelatorioAtletaMountainBike(atletaDeMountainBike1, atletaDeMountainBike2, atletaDeMountainBike3);
 
+        List<Atleta> atletas = List.of(atleta1, atleta2, atletaDeMountainBike1, atletaDeMountainBike2,atletaDeMountainBike3);
+        relatoriosAtletas.gerarRelatorioGeral(atletas);
 
 
 
