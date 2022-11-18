@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Relatorios <T> {
 
-      public void gerarRelatorioAtletaMountainBike(T t){
-        System.out.println("----Lista de Atletas de MountainBike----");
+      public void gerarRelatorioIndividualAtleta(T t){
+        System.out.println("\n----Relatório Individual de Atleta----");
         System.out.println(t);
     }
 
     public void gerarRelatorioGeral(List<T> lista){
-        System.out.println("## RELATORIO GERAL DE ATLETAS CADASTRADOS ##");
+        System.out.println("\n----RELATORIO GERAL DE ATLETAS CADASTRADOS----");
         for (T t: lista){
             System.out.println(t);
         }

@@ -1,6 +1,6 @@
 package br.com.ada.cadastrodeatleta;
 
-public class Atleta {
+public abstract class Atleta {
 
     private String nome;
     private String dataNascimento;
@@ -77,6 +77,5 @@ public class Atleta {
                 ", email= " + email +
                 ", numeroInscricao= " + numeroInscricao;
     }
-
 
 }

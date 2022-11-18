@@ -1,10 +1,10 @@
 package br.com.ada.cadastrodeatleta;
 
-public interface PagamentoInscricao {
+public interface PagamentoInscricao <T>{
 
-    String pagarInscricaoPix(AtletaDeMountainBike atletaDeMountainBike);
+    String pagarInscricaoPix(T t);
 
-    String pagarInscricaoCartao(AtletaDeMountainBike atletaDeMountainBike);
+    String pagarInscricaoCartao(T t);
 
-    String bolsaAtleta(AtletaDeMountainBike atletaDeMountainBike);
+    String bolsaAtleta(T t);
 }

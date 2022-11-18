@@ -1,6 +1,6 @@
 package br.com.ada.cadastrodeatleta;
 
-public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao{
+public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao <AtletaDeMountainBike> {
 
     private CategoriaDoAtletaMountainBike categoriaDoAtleta;
 
@@ -18,6 +18,14 @@ public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao{
         this.categoriaDoAtleta = categoriaDoAtleta;
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", **AtletaDeMountainBike** " +
+                "categoriaDoAtleta= " + categoriaDoAtleta;
+    }
+
     @Override
     public String pagarInscricaoPix(AtletaDeMountainBike atletaDeMountainBike) {
         return "Pagamento realizado por pix pelo(a) " + atletaDeMountainBike;
@@ -33,12 +41,7 @@ public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao{
         return "Isenção de pagamento do(a) " + atletaDeMountainBike;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() +
-                ", **AtletaDeMountainBike** " +
-                "categoriaDoAtleta= " + categoriaDoAtleta;
-    }
+
 
 
 }
