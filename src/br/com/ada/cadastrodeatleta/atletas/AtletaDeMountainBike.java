@@ -1,7 +1,10 @@
-package br.com.ada.cadastrodeatleta;
+package br.com.ada.cadastrodeatleta.atletas;
 
-public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao <AtletaDeMountainBike> {
+import br.com.ada.cadastrodeatleta.pagamento.PagamentoInscricao;
+import br.com.ada.cadastrodeatleta.enumerador.CategoriaDoAtletaMountainBike;
+import br.com.ada.cadastrodeatleta.enumerador.Sexo;
 
+public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao<AtletaDeMountainBike> {
     private CategoriaDoAtletaMountainBike categoriaDoAtleta;
 
     public AtletaDeMountainBike(String nome, String dataNascimento, Sexo sexo, String cpf, String email,
@@ -17,7 +20,6 @@ public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao <
     public void setCategoriaDoAtleta(CategoriaDoAtletaMountainBike categoriaDoAtleta) {
         this.categoriaDoAtleta = categoriaDoAtleta;
     }
-
 
     @Override
     public String toString() {
@@ -40,8 +42,4 @@ public class AtletaDeMountainBike extends Atleta implements PagamentoInscricao <
     public String bolsaAtleta(AtletaDeMountainBike atletaDeMountainBike) {
         return "Isenção de pagamento do(a) " + atletaDeMountainBike;
     }
-
-
-
-
 }

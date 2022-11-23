@@ -1,7 +1,8 @@
-package br.com.ada.cadastrodeatleta;
+package br.com.ada.cadastrodeatleta.atletas;
+
+import br.com.ada.cadastrodeatleta.enumerador.Sexo;
 
 public abstract class Atleta {
-
     private String nome;
     private String dataNascimento;
     private Sexo sexo;
@@ -18,7 +19,6 @@ public abstract class Atleta {
         this.email = email;
 
     }
-
 
     public String getNome() {
         return nome;
@@ -77,5 +77,4 @@ public abstract class Atleta {
                 ", email= " + email +
                 ", numeroInscricao= " + numeroInscricao;
     }
-
 }

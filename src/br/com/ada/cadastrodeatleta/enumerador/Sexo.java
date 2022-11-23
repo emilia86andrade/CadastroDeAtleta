@@ -1,4 +1,4 @@
-package br.com.ada.cadastrodeatleta;
+package br.com.ada.cadastrodeatleta.enumerador;
 
 public enum Sexo {
     FEMININO,

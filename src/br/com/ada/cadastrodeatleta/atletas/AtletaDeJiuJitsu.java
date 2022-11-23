@@ -1,7 +1,10 @@
-package br.com.ada.cadastrodeatleta;
+package br.com.ada.cadastrodeatleta.atletas;
 
-public class AtletaDeJiuJitsu extends Atleta implements PagamentoInscricao <AtletaDeJiuJitsu>{
+import br.com.ada.cadastrodeatleta.pagamento.PagamentoInscricao;
+import br.com.ada.cadastrodeatleta.enumerador.Faixa;
+import br.com.ada.cadastrodeatleta.enumerador.Sexo;
 
+public class AtletaDeJiuJitsu extends Atleta implements PagamentoInscricao<AtletaDeJiuJitsu> {
     private Faixa faixa;
 
     public AtletaDeJiuJitsu(String nome, String dataNascimento, Sexo sexo, String cpf, String email, Faixa faixa) {
@@ -17,7 +20,7 @@ public class AtletaDeJiuJitsu extends Atleta implements PagamentoInscricao <Atle
         this.faixa = faixa;
     }
 
-       @Override
+    @Override
     public String toString() {
         return super.toString() +
                 ", **AtletaDeJiuJitsu** " +
@@ -38,7 +41,4 @@ public class AtletaDeJiuJitsu extends Atleta implements PagamentoInscricao <Atle
     public String bolsaAtleta(AtletaDeJiuJitsu atletaDeJiuJitsu) {
         return "Isenção de pagamento do(a) " + atletaDeJiuJitsu;
     }
-
-
-
 }
